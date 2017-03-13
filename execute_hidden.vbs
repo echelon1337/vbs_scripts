@@ -26,7 +26,6 @@ For Each wmiDiskDrive In wmiDiskDrives
 
         For Each wmiLogicalDisk In wmiLogicalDisks
               
-			  'WScript.echo wmiLogicalDisk.DeviceID
 			  letter = wmiLogicalDisk.DeviceID
 			  
 			  if letter <> "C:" and writen <> True Then				
