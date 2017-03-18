@@ -1,6 +1,6 @@
 ' terminator.vbs
 ' skrypt zabija procesy zajmujace powyzej x% procesora
-' czasami trzeba trochę poczekać zanim zacznie działać 
+' czasami trzeba troche poczeka zanim zacznie dzialac 
 ' -------------------------------------------------------'
 
 strComputer = "."    ' bez tego mozna sie obejsc
@@ -30,8 +30,7 @@ For Each process in perfProcessList
 Next
 
 ' wyciagam tylko proces o danym ID
-' to rozwiązanie jest nie praktyczne ale działa, pewnie przy lepszej znajomosci tego jezyka
-' wygladalo by to inaczej
+' z tej czesci nie jestem dumy
 
 For index = 0 to proc_number
     Set ProcessList = objWMIService.ExecQuery( _
